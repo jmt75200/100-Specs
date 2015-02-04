@@ -355,24 +355,24 @@ function installLinux ( linuxFlavor ){
  *
  */
 
- function drink ( beerType ){
-  //accessing an object = beers[beerType]
+ function drink ( beer ){
+  //accessing an object = beers[beer]
 
   //if true
-  if (beers[beerType] !== undefined){ 
-    if (Array.isArray(beers[beerType])){
-      var beerArray = beers[beerType].map(function (curr, index, array){
+  if (beers[beer] !== undefined){ 
+    if (Array.isArray(beers[beer])){
+      var beerArray = beers[beer].map(function (curr, index, array){
         return curr;
       }).join(" and ");
 
-      return "This " + beerType + " is " + beerArray + ".";
+      return "This " + beer + " is " + beerArray + ".";
     } else {
   //return one string with one array.prop + array.value 
-       return "This " + beerType + " is " + beers[beerType] + ".";
+       return "This " + beer + " is " + beers[beer] + ".";
     }
 
   } else {
-  //if beerType is not inside beers array return false
+  //if beer is not inside beers array return false
     return false;
   }
 
@@ -390,6 +390,17 @@ function installLinux ( linuxFlavor ){
  * @return {String}
  *
  */
+
+ function browseURL ( browser ) {
+   // access browsers[browser]
+   if (browsers[browser] !== undefined){
+    return browsers[browser];
+   }else{
+
+    return false;
+   
+   }
+ }
 
 
 /* Step 25
