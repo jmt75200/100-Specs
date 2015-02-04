@@ -635,6 +635,18 @@ Pen.prototype.write = function( msg ) {
  *
  */
 
+function SolarSystem ( planets ) {
+  this.planets = [];
+
+}
+
+SolarSystem.prototype.addPlanet = function( planet ) {
+  return this.planets.push( planet );
+};
+
+SolarSystem.prototype.removePlanet = function( planet ) {
+  return this.planets.pop( planet );
+};
 
 /* Step 33
  *
