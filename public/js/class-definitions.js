@@ -452,7 +452,7 @@ function installLinux ( linuxFlavor ){
     return planet + " is not a planet!";
    
    }else{
-
+    //var randomPlanet = Math.floor(Math.random() * planets.length);
     return "I'm from " + planet + ", but I wish I could go to " + planets[0];
    }
  }
@@ -706,6 +706,7 @@ PrincessLeia.prototype.getsInTrouble = function(  ) {
 PrincessLeia.prototype.marries = function( love ) {
   if ( love === "Han Solo" ){
     return true;
+
   }else{
 
     return "Gross!";
@@ -730,6 +731,19 @@ PrincessLeia.prototype.marries = function( love ) {
  *
  */
 
+function Stapler ( color, maxPapers ) {
+  this.color = color;
+  this.maxPapers = maxPapers;
+
+}
+
+Stapler.prototype.staplePapers = function( numPapers ) {
+  if ( numPapers <= this.maxPapers ){
+    return true;
+  } else {
+    return false;
+  }
+};
 
 /* Step 35
  *
