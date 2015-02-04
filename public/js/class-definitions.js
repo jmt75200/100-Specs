@@ -355,6 +355,14 @@ function installLinux ( linuxFlavor ){
  *
  */
 
+ function drink ( beerType ){
+//if beerType is not inside beers array return false
+
+//else if true, return one string with one array.prop + array.value 
+//or return multiple array.prop + array.values
+
+ }
+
 
 /* Step 24
  *
