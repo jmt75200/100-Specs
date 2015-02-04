@@ -79,7 +79,7 @@ var gender = {
   female : "female",
   male : "male",
   unknown : undefined
-}
+};
 
 
 /* Step 10
@@ -100,7 +100,7 @@ var princess_leia = {
   money : 890,
   age : 20,
   gender : gender.female
-}
+};
 
 
 /* Step 11
@@ -120,7 +120,7 @@ var domains = {
   "laughingsquid.com" : "162.159.247.97",
   "slumlordhosting.com" : "198.61.179.126",
   "jsonformatter.curiousconcept.com" : "104.28.5.70"
-}
+};
 
 
 /* Step 12
@@ -143,7 +143,7 @@ var browsers = {
   Firefox : "mozilla.org",
   Sleipnir : "fenrir-inc.com",
   Konqueror : "konqueror.org"
-}
+};
 
 /* Step 13
  *
@@ -174,7 +174,7 @@ var rainbow = {
   },
 
   isDouble : true
-}
+};
 
 
 
@@ -191,7 +191,7 @@ var rainbow = {
  * "Bieber Linux"
  *
  */
-var linuxFlavors = ["Gentoo", "Fedora", "Debian", "Slackware", "Red Hat", "Bieber Linux"]
+var linuxFlavors = ["Gentoo", "Fedora", "Debian", "Slackware", "Red Hat", "Bieber Linux"];
 
 /* Step 15
  *
@@ -206,7 +206,7 @@ var linuxFlavors = ["Gentoo", "Fedora", "Debian", "Slackware", "Red Hat", "Biebe
  *
  */
 
-var DNA = ["nucleatides", "guanine", "adenine", "thymine","cytosine"]
+var DNA = ["nucleatides", "guanine", "adenine", "thymine","cytosine"];
 
 
 /* Step 16
@@ -225,7 +225,7 @@ var laptopCosts = {
   Alienware: 2500,
   HP: 499,
   Surface: 320
-}
+};
 
 
 /* Step 17
@@ -243,7 +243,7 @@ var laptopCosts = {
  *
  */
 
- var livingOrganismClassification = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species" ]
+ var livingOrganismClassification = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species" ];
 
 
 /* Step 18
@@ -259,7 +259,7 @@ var laptopCosts = {
  *
  */
 
- var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"]
+ var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
 
 /* Step 19
  *
@@ -286,7 +286,7 @@ var laptopCosts = {
   Stout : ["Thick", "Dark"],
   Porter : "Bitter",
   Ale : ["Light", "Golden"]
- }
+ };
 
 
 /* Step 20
@@ -356,10 +356,25 @@ function installLinux ( linuxFlavor ){
  */
 
  function drink ( beerType ){
-//if beerType is not inside beers array return false
+  //accessing an object = beers[beerType]
 
-//else if true, return one string with one array.prop + array.value 
-//or return multiple array.prop + array.values
+  //if true
+  if (beers[beerType] !== undefined){ 
+    if (Array.isArray(beers[beerType])){
+      var beerArray = beers[beerType].map(function (curr, index, array){
+        return curr;
+      }).join(" and ");
+
+      return "This " + beerType + " is " + beerArray + ".";
+    } else {
+  //return one string with one array.prop + array.value 
+       return "This " + beerType + " is " + beers[beerType] + ".";
+    }
+
+  } else {
+  //if beerType is not inside beers array return false
+    return false;
+  }
 
  }
 
