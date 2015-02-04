@@ -413,6 +413,17 @@ function installLinux ( linuxFlavor ){
  *
  */
 
+ function listLivingOrgClass ( ) {
+   //var livingOrganismClassification = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species" ];
+
+   var listArray = livingOrganismClassification.map(function (curr, index, array){
+    return '<li>' + curr + '</li>';
+   });
+
+   return '<ul>' + listArray + '</ul>';
+
+ }
+
 
 /* Step 26
  *
