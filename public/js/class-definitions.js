@@ -298,6 +298,10 @@ var laptopCosts = {
  *
  */
 
+ function sahara_river () {
+  return "Nile River";
+ }
+
 
 /* Step 21
  *
