@@ -445,6 +445,17 @@ function installLinux ( linuxFlavor ){
  *
  */
 
+ function favoritePlanet (planet) {
+   if (planets.indexOf( planet ) == -1){
+
+    return planet + " is not a planet!";
+   
+   }else{
+
+    return "I'm from " + planet + ", but I wish I could go to " + planets[0];
+   }
+ }
+
 
 /* Step 27
  *
