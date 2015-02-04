@@ -480,6 +480,20 @@ function installLinux ( linuxFlavor ){
  *
  */
 
+ function Person (name, money, age, gender) {
+   this.name = name;
+   this.money = money;
+   this.age = age;
+   this.gender = gender;
+ }
+
+Person.prototype.spendMoney = function( dollas ) {
+  return this.money -= dollas;
+};
+
+Person.prototype.earnMoney = function( dollas ) {
+  return this.money += dollas;
+};
 
 /* Step 28
  *
