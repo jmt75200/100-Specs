@@ -215,7 +215,7 @@ var DNA = ["nucleatides", "guanine", "adenine", "thymine","cytosine"]
  * with properties and values set to:
  * 
  * MacBook      => 1500
- * AlienWare    => 2500
+ * Alienware    => 2500
  * HP           => 499
  * Surface      => 320
  *
@@ -313,7 +313,7 @@ var laptopCosts = {
  * @return {Number}
  *
  */
-function addNumbers (a, b){
+function addNumbers ( a, b ){
   return a + b;
 }
 
@@ -328,7 +328,14 @@ function addNumbers (a, b){
  * @return {Bool}
  *
  */
+function installLinux ( linuxFlavor ){
+  if (linuxFlavors.indexOf( linuxFlavor ) == -1){
+    return false;
+  }else{
+    return true;
+  }
 
+}
 
 /* Step 23
  *
