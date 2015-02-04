@@ -561,6 +561,16 @@ function purchaseLaptop ( laptop ) {
  *
  */
 
+function Pen ( color ) {
+  
+  this.color = color;
+
+}
+
+Pen.prototype.write = function( msg ) {
+  return this.color + ": " + msg;
+};
+
 
 /* Step 31
  *
