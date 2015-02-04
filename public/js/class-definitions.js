@@ -360,8 +360,8 @@ function installLinux ( linuxFlavor ){
 
   //if true
   if (beers[beer] !== undefined){ 
-    if (Array.isArray(beers[beer])){
-      var beerArray = beers[beer].map(function (curr, index, array){
+    if ( Array.isArray(beers[beer]) ){
+      var beerArray = beers[beer].map(function ( curr, index, array ){
         return curr;
       }).join(" and ");
 
@@ -395,6 +395,7 @@ function installLinux ( linuxFlavor ){
    // access browsers[browser]
    if (browsers[browser] !== undefined){
     return browsers[browser];
+   
    }else{
 
     return false;
@@ -416,7 +417,7 @@ function installLinux ( linuxFlavor ){
  function listLivingOrgClass ( ) {
    //var livingOrganismClassification = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species" ];
 
-   var listArray = livingOrganismClassification.map(function (curr, index, array){
+   var listArray = livingOrganismClassification.map(function ( curr, index, array ){
     return '<li>' + curr + '</li>';
    });
 
@@ -445,7 +446,7 @@ function installLinux ( linuxFlavor ){
  *
  */
 
- function favoritePlanet (planet) {
+ function favoritePlanet ( planet ) {
    if (planets.indexOf( planet ) == -1){
 
     return planet + " is not a planet!";
@@ -480,7 +481,7 @@ function installLinux ( linuxFlavor ){
  *
  */
 
- function Person (name, money, age, gender) {
+ function Person ( name, money, age, gender ) {
    this.name = name;
    this.money = money;
    this.age = age;
@@ -506,6 +507,15 @@ Person.prototype.earnMoney = function( dollas ) {
  * @return {String}
  *
  */
+
+function purchaseLaptop ( laptop ) {
+  if ( laptopCosts.hasOwnProperty( laptop ) ){
+    return String( laptopCosts[laptop] );
+  }else{
+    return -1;
+  }
+  
+}
 
 
 /* Step 29
