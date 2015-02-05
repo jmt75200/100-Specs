@@ -1197,11 +1197,15 @@ var dinner = new Meal("fish and vegetables");
  *
  */
 Animal.prototype.isWarmBlooded = function( ) {
-  if (this.species === "Monkey" || this.species === "Bird"){
+  if ( this.species === "Monkey" || this.species === "Bird" ){
     return true;
-  }else if (this.species === "Fish"){
+  
+  }else if ( this.species === "Fish" ){
+  
     return false;
+  
   }else{
+  
     return "Could not determine if warm-blooded";
   }
 };
@@ -1213,7 +1217,13 @@ Animal.prototype.isWarmBlooded = function( ) {
  * return "Driving on {streetName}", else return "Driving forward".
  *
  */
-
+Vehicle.prototype.drive = function( streetName ) {
+  if ( streetName !== undefined ){
+    return "Driving on " + streetName;
+  }else{
+    return "Driving on";
+  }
+};
 
  /* Step 83
  *
