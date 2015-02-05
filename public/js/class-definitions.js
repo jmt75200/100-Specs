@@ -1055,9 +1055,9 @@ function Shape ( sides ) {
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
 
-function Box ( contents ) {
+function Box ( contents, isOpen ) {
   this.contents = contents;
-  this.isOpen = true;
+  this.isOpen = isOpen;
 }
 
 /**
@@ -1147,8 +1147,8 @@ var square = new Shape(4);
 var hexagon = new Shape(6);
 
 // Create 2 boxes
-var catBox;
-var christmasPresent;
+var catBox = new Box(new Animal("Cat"), true);
+var christmasPresent = new Box(george, false);
 
 // Create 2 doors
 var automaticDoor;
