@@ -1067,8 +1067,8 @@ function Box ( contents, isOpen ) {
  * @param {boolean} isOpen Whether the door is opened or closed
  */
 
-function Door ( ) {
-  this.isOpen = false;
+function Door ( isOpen ) {
+  this.isOpen = isOpen;
 }
 
 /**
@@ -1151,7 +1151,7 @@ var catBox = new Box(new Animal("Cat"), true);
 var christmasPresent = new Box(george, false);
 
 // Create 2 doors
-var automaticDoor;
+var automaticDoor = new Door(true);
 var bankVault;
 
 // Create 2 shoes
