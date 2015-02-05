@@ -1135,39 +1135,39 @@ function Meal ( foods ) {
 
 
 // Create 2 different species of animals
-var george = new Animal("Monkey", "male");
-var nemo = new Animal ("Fish", "male");
+var george = new Animal( "Monkey", "male" );
+var nemo = new Animal ( "Fish", "male" );
 
 // Create 2 different vehicles
-var civic = new Vehicle("Honda", "Civic");
-var forte = new Vehicle("KIA", "Forte");
+var civic = new Vehicle( "Honda", "Civic" );
+var forte = new Vehicle( "KIA", "Forte" );
 
 // Create 2 shapes with different numbers of sides
-var square = new Shape(4);
-var hexagon = new Shape(6);
+var square = new Shape( 4 );
+var hexagon = new Shape( 6 );
 
 // Create 2 boxes
-var catBox = new Box(new Animal("Cat"), true);
-var christmasPresent = new Box(george, false);
+var catBox = new Box( new Animal( "Cat" ), true );
+var christmasPresent = new Box( george, false );
 
 // Create 2 doors
-var automaticDoor = new Door(true);
-var bankVault = new Door(false);
+var automaticDoor = new Door( true );
+var bankVault = new Door( false );
 
 // Create 2 shoes
-var rubySlippers = new Shoe(7, "red");
-var dressShoes = new Shoe(10, "black");
+var rubySlippers = new Shoe( 7, "red" );
+var dressShoes = new Shoe( 10, "black" );
 
 // Create 2 houses
-var singleStory = new House(1);
-var twoStory = new House(2);
+var singleStory = new House( 1 );
+var twoStory = new House( 2 );
 
 // Create 2 lightbulbs
-var incandescent = new Lightbulb(true);
-var halogen = new Lightbulb(false);
+var incandescent = new Lightbulb( true );
+var halogen = new Lightbulb( false );
 
 // Create 2 cookies of different flavors
-var chocolateChip;
+var chocolateChip = new Cookie( "chocolate" );
 var gingerbread;
 
 // Create 2 different meals
