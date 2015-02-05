@@ -1067,6 +1067,9 @@ function Box ( contents ) {
  * @param {boolean} isOpen Whether the door is opened or closed
  */
 
+function Door ( ) {
+  this.isOpen = false;
+}
 
 /**
  * Step 55
