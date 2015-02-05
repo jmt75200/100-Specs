@@ -1221,7 +1221,7 @@ Vehicle.prototype.drive = function( streetName ) {
   if ( streetName !== undefined ){
     return "Driving on " + streetName;
   }else{
-    return "Driving on";
+    return "Driving forward";
   }
 };
 
