@@ -1055,6 +1055,10 @@ function Shape ( sides ) {
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
 
+function Box ( contents ) {
+  this.contents = contents;
+  this.isOpen = true;
+}
 
 /**
  * Step 54
