@@ -1102,6 +1102,9 @@ function House ( stories ) {
  * @param {boolean} isOn Whether the light is on or off
  */
 
+function Lightbulb ( ) {
+  this.isOn = true;
+}
 
 /**
  * Step 58
@@ -1110,6 +1113,9 @@ function House ( stories ) {
  * @param {string} flavor The cookie's flavor
  */
 
+function Cookie ( flavor ) {
+  this.flavor = flavor;
+}
 
 /**
  * Step 59
