@@ -1218,7 +1218,7 @@ Animal.prototype.isWarmBlooded = function( ) {
  *
  */
 Vehicle.prototype.drive = function( streetName ) {
-  if ( streetName !== undefined ){
+  if ( typeof(streetName) === 'string' && streetName !== "" ){
     return "Driving on " + streetName;
   }else{
     return "Driving forward";
