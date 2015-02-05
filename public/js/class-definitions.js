@@ -1019,7 +1019,7 @@ Scientist.prototype.addDiscovery = function( discovery ) {
  * @param {string} species The animal species
  * @param {string} gender  male or female
  */
-function Animal (species, gender) {
+function Animal ( species, gender ) {
   this.species = species;
   this.gender = gender;
 }
@@ -1031,7 +1031,10 @@ function Animal (species, gender) {
  * @param {string} make The vehicle's make
  * @param {string} model The vehicle's model
  */
-
+function Vehicle ( make, model ) {
+  this.make = make;
+  this.model = model;
+}
 
 /**
  * Step 52
@@ -1040,6 +1043,9 @@ function Animal (species, gender) {
  * @param {number} sides The number of sides, should be greater than 3
  */
 
+// function Shape ( number ) {
+//   this.number =  
+// }
 
 /**
  * Step 53
