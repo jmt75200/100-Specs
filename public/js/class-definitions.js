@@ -1274,7 +1274,14 @@ Shape.prototype.getType = function( ) {
  * Return true if openBox opens the box, false otherwise.
  *
  */
-
+Box.prototype.openBox = function( ) {
+  if (this.isOpen === false){
+    this.isOpen = true;
+    return true;
+  }else{
+    return false;
+  }
+};
 
  /* Step 85
  *
@@ -1283,7 +1290,15 @@ Shape.prototype.getType = function( ) {
  * Return true if openClose opens the door, false if openClose closes the door.
  *
  */
-
+Door.prototype.openClose = function(first_argument) {
+  if (this.isOpen === true){
+    this.isOpen = false;
+    return false;
+  }else{
+    this.isOpen = true;
+    return true;
+  }
+};
 
 /* Step 86
  *
