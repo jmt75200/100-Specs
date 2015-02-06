@@ -1244,7 +1244,7 @@ Vehicle.prototype.drive = function( streetName ) {
  */
 
 Shape.prototype.getType = function( ) {
-  switch( this.side ){
+  switch( this.sides ){
     case 3:
       return "triangle";
     case 4:
