@@ -1294,7 +1294,7 @@ Door.prototype.openClose = function( ) {
   if (this.isOpen === true){
     this.isOpen = false;
     return false;
-  }else{
+  } else {
     this.isOpen = true;
     return true;
   }
@@ -1322,7 +1322,7 @@ Shoe.prototype.findShoes = function( ) {
 House.prototype.isATallStory = function( storiesTooTall ) {
   if (this.stories >= storiesTooTall){
     return true;
-  }else{
+  } else {
     return false;
   }
 };
@@ -1339,7 +1339,7 @@ House.prototype.isATallStory = function( storiesTooTall ) {
    if (on === "on"){
     this.isOn = true;
     return true;
-   }else{
+   } else {
     this.isOn = false;
     return false;
    }
@@ -1353,7 +1353,13 @@ House.prototype.isATallStory = function( storiesTooTall ) {
  * and the dayOfTheWeek is "Monday", return true.  Else return false.
  *
  */
-
+Cookie.prototype.swipedByCookieMonster = function( dayOfTheWeek ) {
+  if (this.flavor === "chocolate" && dayOfTheWeek === "Monday"){
+    return true;
+  } else {
+    return false;
+  }
+};
 
  /* Step 90
  *
