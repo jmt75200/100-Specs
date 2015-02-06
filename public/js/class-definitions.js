@@ -1290,7 +1290,7 @@ Box.prototype.openBox = function( ) {
  * Return true if openClose opens the door, false if openClose closes the door.
  *
  */
-Door.prototype.openClose = function(first_argument) {
+Door.prototype.openClose = function( ) {
   if (this.isOpen === true){
     this.isOpen = false;
     return false;
@@ -1306,7 +1306,9 @@ Door.prototype.openClose = function(first_argument) {
  * the color and size of the shoe ("Found red shoes of size 8").
  *
  */
-
+Shoe.prototype.findShoes = function( ) {
+  return "Found " + this.color + " shoes of size " + this.size;
+};
 
  /* Step 87
  *
@@ -1317,7 +1319,13 @@ Door.prototype.openClose = function(first_argument) {
  *
  */
 
-
+House.prototype.isATallStory = function( storiesTooTall ) {
+  if (this.stories >= storiesTooTall){
+    return true;
+  }else{
+    return false;
+  }
+};
  /* Step 88
  *
  * Declare a Lightbulb method called flipSwitch that accepts a
