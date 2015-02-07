@@ -1413,8 +1413,8 @@ var notWarmOrColdAnimal = new Animal("Snuffleupagus").isWarmBlooded();
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
+var streetDriving = new Vehicle('Civic').drive('Kahio');
+var forwardDriving = new Vehicle('Civic').drive();
 
 
  /* Step 93
